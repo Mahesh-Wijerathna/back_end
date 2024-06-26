@@ -6,6 +6,7 @@
   "main": "server.js",
   "scripts": {
     "test": "cd ../test && npm run test",
+    "start": "node src/server.js",
     "dev": "nodemon src/server.js",
     "install_central": "npm install",
     "install_auth": "cd ../auth && npm install",
