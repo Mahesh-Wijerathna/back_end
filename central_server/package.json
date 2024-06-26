@@ -1,0 +1,40 @@
+{
+  "homepage": "http://localhost:3000",
+  "name": "central",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "cd ../test && npm run test",
+    "dev": "nodemon src/server.js",
+    "install_central": "npm install",
+    "install_auth": "cd ../auth && npm install",
+    "install_tourist": "cd ../tourist && npm install",
+    "install_m_center": "cd ../m_center && npm install",
+    "install_destination": "cd ../destination && npm install",
+    "install_appointment": "cd ../appointment && npm install",
+    "install_test": "cd ../test && npm install",
+    "deploy_central": "node server.js",
+    "deploy_auth": "cd ../auth && npm run dev",
+    "deploy_tourist": "cd ../tourist && npm run dev",
+    "deploy_m_center": "cd ../m_center && npm run dev",
+    "deploy_destination": "cd ../destination && npm run dev",
+    "deploy_appointment": "cd ../appointment && npm run dev",
+    "deploy_front_end": "cd ../../front-end && npm start",
+    "install_all": "npm-run-all install_central install_auth install_test",
+    "dev_all": "npm-run-all --parallel deploy_auth deploy_destination deploy_tourist deploy_m_center deploy_appointment deploy_front_end"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "express-http-proxy": "^2.0.0",
+    "mongoose": "^8.4.1",
+    "nodemon": "^3.1.4"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
