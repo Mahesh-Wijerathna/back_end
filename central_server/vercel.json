@@ -2,15 +2,14 @@
     "version": 2,
     "builds": [
         {
-            "src": "./central_server/server.js",
-            "use": "@now/node-server"
+            "src": "./server.js",
+            "use": "@varcel/node"
         }
     ],
     "routes": [
-        {"handle": "filesystem"},
         {
-            "src": "/central_server/.*",
-            "dest": "/central_server/server.js"
+            "src": "/(.*)",
+            "dest": "/"
         }
     ]
 }
